@@ -1,2 +1,2 @@
-# turbo-guacamole
-AI project
+# PokeType-Identifier
+AI project, Kratsas, Carlson, Cox
