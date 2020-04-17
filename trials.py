@@ -47,7 +47,7 @@ for x in dataset:
                     feature_matrix[i][j] = ((int(image[i,j,0]) + int(image[i,j,1]) + int(image[i,j,2]))/3)
 
             # features = np.reshape(feature_matrix, (1000*607))
-
+            print(count)
             newDataFrame.loc[count] = {"Feature1": feature_matrix}
 
             # print(features.tostring())
@@ -59,10 +59,10 @@ count=0
 
 # plt.show()
 # print(newDataFrame)
-# newString=newDataFrame.loc[2]["Feature1"]
+# newString=newDataFrame.loc[112]["Feature1"]
 # plt.imshow(newString,aspect="auto")
 # plt.show()
-# newString=newDataFrame.loc[6]["Feature1"]
+# newString=newDataFrame.loc[226]["Feature1"]
 # plt.imshow(newString,aspect="auto")
 # plt.show()
 # newString=newDataFrame.loc[7]["Feature1"]
@@ -92,16 +92,19 @@ print(Y.shape)
 
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2 )
 
+print(newDataFrame)
+
 for i in range(9):
     plt.subplot(3,3,i+1)
     plt.xticks([])
     plt.yticks([])
     newString=X_train[i][0]
-    # plt.imshow(newString, cmap='gray', interpolation='none')
-    # plt.show()
+    plt.imshow(newString, cmap='gray', interpolation='none')
+    plt.show()
     print("Class {}".format(y_train[i]))
     print(i)
     plt.title("Class {}".format(y_train[i]))
+
 
 X_train = X_train.astype('float32')
 X_test = X_test.astype('float32')
@@ -123,3 +126,5 @@ model.fit(X_train, y_train, batch_size=128, epochs=4, verbose=1,)
 loss,accuracy = model.evaluate(X_test, y_test, verbose=1)
 print('Test score (loss):', loss)
 print('Test accuracy:', accuracy)
+
+#split into just water or normal,
