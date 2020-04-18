@@ -47,7 +47,7 @@ for x in dataset:
                     feature_matrix[i][j] = ((int(image[i,j,0]) + int(image[i,j,1]) + int(image[i,j,2]))/3)
 
             # features = np.reshape(feature_matrix, (1000*607))
-            print(count)
+
             newDataFrame.loc[count] = {"Feature1": feature_matrix}
 
             # print(features.tostring())
@@ -57,33 +57,11 @@ for x in dataset:
 count=0
 
 
-# plt.show()
-# print(newDataFrame)
-# newString=newDataFrame.loc[112]["Feature1"]
-# plt.imshow(newString,aspect="auto")
-# plt.show()
-# newString=newDataFrame.loc[226]["Feature1"]
-# plt.imshow(newString,aspect="auto")
-# plt.show()
-# newString=newDataFrame.loc[7]["Feature1"]
-# print(len(newString))
-# newString.replace('[','')
-# newString.replace(']','')
-# print(len(newDataFrame.loc[2]["Feature1"]))
-# print(len(newString))
-# print(newString)
-# print(newDataFrame.loc[2]["Feature1"])
-# print(newString)
-# print(newString.shape)
 
-# random = np.random.normal(0,1,size=[100,100])
-# plt.imshow(newString,aspect="auto")
-# plt.show()
 
 dataset = newDataFrame.values
-# newDataFrame.to_csv("pokePixCSV.csv", encoding='utf-8')
 
-X = dataset[:,0:dataset.shape[1]] #select features (input data)
+X = dataset[:,0:dataset.shape[1]]
 
 nb_classes = 18
 
@@ -99,7 +77,7 @@ for i in range(9):
     plt.xticks([])
     plt.yticks([])
     newString=X_train[i][0]
-    plt.imshow(newString, cmap='gray', interpolation='none')
+    plt.imshow(newString, interpolation='none')
     plt.show()
     print("Class {}".format(y_train[i]))
     print(i)
