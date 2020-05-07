@@ -1,4 +1,4 @@
-# PokeType-Identifier
+# PokéType-Identifier
 **By Kyle Cox, Conner Carlson, and Samuel Kratsas**
 
 **Introduction**  
