@@ -1,5 +1,5 @@
-## PokeType-Identifier
-## By Kyle Cox, Conner Carlson, and Samuel Kratsas 
+### PokeType-Identifier
+### By Kyle Cox, Conner Carlson, and Samuel Kratsas 
 
 **Introduction**  
    You open up your phone's photos, scroll through, and see a search bar suggesting items like "dog," "chair," or "car." Upon using the search bar, you learn that it's able to show you your pictures that include the searched item. This software works by using machine learning and a field called Convolutional Neural Networks to detect these items. These CNN models work at finding features (such as color, lines, shapes) that make the software believe it has found a particular item. Our smartphones make this task seem like a breeze, how hard is it actually to make a CNN Model for a corresponding set of images. In this project we will be creating a CNN of our own, and we will be testing it on Pokemon. Our model will be trained to  detect features such as the order and colors of pixels from an image of a Pokemon, and it will use these findings to make a near precise guess about the type of the Pokemon. Staying true to Pokemon, our project has evolved many times over the course of this study, so you will see how our model’s performance changes when used on a few different Pokemon image datasets.
