@@ -36,3 +36,6 @@
 
 **Conclusion**  
   Over the course of this study we learned alot about what works and what doesn’t work when designing a Machine Learning model and this was due to the challenges we faced. One point we would like to really drive home is that you should always try to have large class sizes for your model. As a general rule of thumb it seems to be the bigger class size the better, and as for the great datasets we use for our in class exercises: I saw one recently in Datacamp that had a class size of 2000, which is far more than our 800 total image set. I hope you remember this if you ever work with Machine Learning.
+  
+[**References**](https://github.com/samuelKratsas/PokeType-Identifier/blob/master/ourReferences.md)
+
